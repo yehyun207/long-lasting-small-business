@@ -10,7 +10,7 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(height: 250),
+          SizedBox(height: 200),
           Image.asset(
             'assets/images/LLSB_BI.png',
             width: MediaQuery.sizeOf(context).width * 0.3,
