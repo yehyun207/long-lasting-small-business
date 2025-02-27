@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:module_b_103/presentation/providers/home_provider.dart';
+import 'package:module_b_103/presentation/widgets/page_indicator.dart';
 import 'package:module_b_103/presentation/widgets/sliver_app_bar.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -62,40 +63,11 @@ class _HomeScreenState extends State<HomeScreen> {
                           fontSize: 16,
                         ),
                       ),
-                      SizedBox(
+                      Container(
+                        width: double.infinity,
                         height: 250,
-                        child: PageView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemBuilder: (context, index) {
-                            final hdstModel = homeProvider.randomFiveHdst[index];
-                            return Column(
-                              children: [
-                                Image.network(
-                                  'http://192.168.0.18:8081/resource/img/hdst/${hdstModel.repesntFileNm}',
-                                  width: MediaQuery.sizeOf(context).width - 60,
-                                  height: 180,
-                                  fit: BoxFit.cover,
-                                  errorBuilder: (context, error, stacktrace) => Container(
-                                    height: 180,
-                                    width: MediaQuery.sizeOf(context).width - 60,
-                                    color: Colors.blue.shade50,
-                                  ),
-                                ),
-                                SizedBox(height: 14),
-                                Text(
-                                  hdstModel.hdstNm,
-                                  style: TextStyle(
-                                    color: Colors.blue,
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ],
-                            );
-                          },
-                          itemCount: homeProvider.randomFiveHdst.length,
-                        ),
-                      ),
+                        child: PhotoSwipeIndicator(items: homeProvider.randomFiveHdst),
+                      )
                     ],
                   ),
                 ),
