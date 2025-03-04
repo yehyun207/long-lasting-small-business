@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:module_b_103/presentation/screens/home_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -8,7 +7,7 @@ final oneBoardingProvider = OneBoardingProvider();
 
 class OneBoardingProvider extends ChangeNotifier {
   final videoController = VideoPlayerController.networkUrl(
-    Uri.parse('http://192.168.0.18:8081/video/streaming/100.mp4'),
+    Uri.parse('http://172.28.2.84:8081/video/streaming/100.mp4'),
   );
 
   void initVideoController(BuildContext context) async {

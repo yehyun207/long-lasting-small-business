@@ -38,7 +38,7 @@ class _PhotoSwipeIndicatorState extends State<PhotoSwipeIndicator> {
                     child: Stack(
                       children: [
                         Image.network(
-                          'http://192.168.0.18:8081/resource/img/hdst/${item.repesntFileNm}',
+                          'http://172.28.2.84:8081/resource/img/hdst/${item.repesntFileNm}',
                           width: double.infinity,
                           fit: BoxFit.cover,
                           errorBuilder: (context, error, stack) {
@@ -67,11 +67,11 @@ class _PhotoSwipeIndicatorState extends State<PhotoSwipeIndicator> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 8),
+                  SizedBox(height: 25),
                   Text(
                     item.hdstNm,
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold,
                       color: Colors.blue,
                     ),
