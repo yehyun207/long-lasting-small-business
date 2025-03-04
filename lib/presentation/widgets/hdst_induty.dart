@@ -35,6 +35,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.blue,
+                    fontWeight: FontWeight.bold
                   ),
                 ),
               ],
@@ -57,6 +58,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.blue,
+                    fontWeight: FontWeight.bold
                   ),
                 ),
               ],
@@ -79,6 +81,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.blue,
+                    fontWeight: FontWeight.bold
                   ),
                 ),
               ],
@@ -101,6 +104,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.blue,
+                    fontWeight: FontWeight.bold
                   ),
                 ),
               ],
@@ -131,6 +135,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.blue,
+                    fontWeight: FontWeight.bold
                   ),
                 ),
               ],
@@ -153,6 +158,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.blue,
+                    fontWeight: FontWeight.bold
                   ),
                 ),
               ],
@@ -175,6 +181,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.blue,
+                    fontWeight: FontWeight.bold
                   ),
                 ),
               ],
@@ -196,6 +203,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                   '${widget.items[7].indutyNm}',
                   style: TextStyle(
                     fontSize: 16,
+                    fontWeight: FontWeight.bold,
                     color: Colors.blue,
                   ),
                 ),
