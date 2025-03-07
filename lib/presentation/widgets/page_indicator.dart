@@ -5,7 +5,7 @@ import '../../data/models/hdst_model.dart';
 class PhotoSwipeIndicator extends StatefulWidget {
   final List<HdstModel> items;
 
-  const PhotoSwipeIndicator({Key? key, required this.items}) : super(key: key);
+  const PhotoSwipeIndicator({super.key, required this.items});
 
   @override
   _PhotoSwipeIndicatorState createState() => _PhotoSwipeIndicatorState();

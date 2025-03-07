@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:module_b_103/presentation/providers/home_provider.dart';
-import 'package:module_b_103/presentation/screens/home_screen.dart';
 import 'package:module_b_103/presentation/screens/profile_screen.dart';
 import 'package:module_b_103/presentation/screens/search_screen.dart';
 import 'package:module_b_103/presentation/widgets/go_to.dart';
@@ -17,26 +16,6 @@ class HomeContent extends StatefulWidget {
 
 class _HomeContentState extends State<HomeContent> {
 
-  int _currentIndex = 0;
-
-  void _onTap(int index) {
-    setState(() {
-      _currentIndex = index;
-    });
-    _navigateToPage(index);
-  }
-
-  void _navigateToPage(int index) {
-    switch(index) {
-      case 0: 
-        Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
-      case 1:
-        Navigator.push(context, MaterialPageRoute(builder: (context) => SearchScreen()));
-      case 2:
-        Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen()));
-    }
-  }
-  
   void updateScreen() => setState(() {});
 
   @override
@@ -131,13 +110,9 @@ class _HomeContentState extends State<HomeContent> {
                     HdstInduty(items: homeProvider.induty),
                   ],
                 ),
-                SizedBox(
-                  height: 30,
-                ),
+                SizedBox(height: 30),
                 Container(
-                  decoration: BoxDecoration(
-                    color: Colors.blue.shade50
-                  ),
+                  decoration: BoxDecoration(color: Colors.blue.shade50),
                   child: Column(
                     children: [
                       Padding(
@@ -160,11 +135,23 @@ class _HomeContentState extends State<HomeContent> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          GoTo(title: '홍보영상', url: 'https://www.sbiz.or.kr/hdst/board/boardList.do?boardCd=VIDEO',),
-                          GoTo(title: '우수사례', url: 'https://www.sbiz.or.kr/hdst/board/boardList.do?boardCd=GOODEXAMPLE',),
-                          GoTo(title: 'FAQ', url: 'https://www.sbiz.or.kr/hdst/board/boardList.do?boardCd=FAQ',)
+                          GoTo(
+                            title: '홍보영상',
+                            url:
+                                'https://www.sbiz.or.kr/hdst/board/boardList.do?boardCd=VIDEO',
+                          ),
+                          GoTo(
+                            title: '우수사례',
+                            url:
+                                'https://www.sbiz.or.kr/hdst/board/boardList.do?boardCd=GOODEXAMPLE',
+                          ),
+                          GoTo(
+                            title: 'FAQ',
+                            url:
+                                'https://www.sbiz.or.kr/hdst/board/boardList.do?boardCd=FAQ',
+                          ),
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),

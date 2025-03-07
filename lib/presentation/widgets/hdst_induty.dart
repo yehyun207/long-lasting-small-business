@@ -20,18 +20,18 @@ class _HdstIndutyState extends State<HdstInduty> {
             Column(
               children: [
                 Container(
+                  width: 70,
+                  height: 70,
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade50,
+                    borderRadius: BorderRadius.circular(100),
+                  ),
                   child: Image.network(
                       'http://172.28.2.84:8081${widget.items[0].ic}'
                   ),
-                  width: 70,
-                  height: 70,
-                  decoration: BoxDecoration(
-                    color: Colors.blue.shade50,
-                    borderRadius: BorderRadius.circular(100),
-                  ),
                 ),
                 Text(
-                  '${widget.items[0].indutyNm}',
+                  widget.items[0].indutyNm,
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.blue,
@@ -43,18 +43,18 @@ class _HdstIndutyState extends State<HdstInduty> {
             Column(
               children: [
                 Container(
+                  width: 70,
+                  height: 70,
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade50,
+                    borderRadius: BorderRadius.circular(100),
+                  ),
                   child: Image.network(
                       'http://172.28.2.84:8081${widget.items[1].ic}'
                   ),
-                  width: 70,
-                  height: 70,
-                  decoration: BoxDecoration(
-                    color: Colors.blue.shade50,
-                    borderRadius: BorderRadius.circular(100),
-                  ),
                 ),
                 Text(
-                  '${widget.items[1].indutyNm}',
+                  widget.items[1].indutyNm,
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.blue,
@@ -66,18 +66,18 @@ class _HdstIndutyState extends State<HdstInduty> {
             Column(
               children: [
                 Container(
+                  width: 70,
+                  height: 70,
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade50,
+                    borderRadius: BorderRadius.circular(100),
+                  ),
                   child: Image.network(
                       'http://172.28.2.84:8081${widget.items[2].ic}'
                   ),
-                  width: 70,
-                  height: 70,
-                  decoration: BoxDecoration(
-                    color: Colors.blue.shade50,
-                    borderRadius: BorderRadius.circular(100),
-                  ),
                 ),
                 Text(
-                  '${widget.items[2].indutyNm}',
+                  widget.items[2].indutyNm,
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.blue,
@@ -89,14 +89,14 @@ class _HdstIndutyState extends State<HdstInduty> {
             Column(
               children: [
                 Container(
-                  child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[3].ic}'
-                  ),
                   width: 70,
                   height: 70,
                   decoration: BoxDecoration(
                     color: Colors.blue.shade50,
                     borderRadius: BorderRadius.circular(100),
+                  ),
+                  child: Image.network(
+                      'http://172.28.2.84:8081${widget.items[3].ic}'
                   ),
                 ),
                 Text(
@@ -120,14 +120,14 @@ class _HdstIndutyState extends State<HdstInduty> {
             Column(
               children: [
                 Container(
-                  child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[4].ic}'
-                  ),
                   width: 70,
                   height: 70,
                   decoration: BoxDecoration(
                     color: Colors.blue.shade50,
                     borderRadius: BorderRadius.circular(100),
+                  ),
+                  child: Image.network(
+                      'http://172.28.2.84:8081${widget.items[4].ic}'
                   ),
                 ),
                 Text(
@@ -143,18 +143,18 @@ class _HdstIndutyState extends State<HdstInduty> {
             Column(
               children: [
                 Container(
-                  child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[5].ic}'
-                  ),
                   width: 70,
                   height: 70,
                   decoration: BoxDecoration(
                     color: Colors.blue.shade50,
                     borderRadius: BorderRadius.circular(100),
                   ),
+                  child: Image.network(
+                      'http://172.28.2.84:8081${widget.items[5].ic}'
+                  ),
                 ),
                 Text(
-                  '${widget.items[5].indutyNm}',
+                  widget.items[5].indutyNm,
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.blue,
@@ -166,14 +166,14 @@ class _HdstIndutyState extends State<HdstInduty> {
             Column(
               children: [
                 Container(
-                  child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[6].ic}'
-                  ),
                   width: 70,
                   height: 70,
                   decoration: BoxDecoration(
                     color: Colors.blue.shade50,
                     borderRadius: BorderRadius.circular(100),
+                  ),
+                  child: Image.network(
+                      'http://172.28.2.84:8081${widget.items[6].ic}'
                   ),
                 ),
                 Text(
@@ -189,18 +189,18 @@ class _HdstIndutyState extends State<HdstInduty> {
             Column(
               children: [
                 Container(
-                  child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[7].ic}'
-                  ),
                   width: 70,
                   height: 70,
                   decoration: BoxDecoration(
                     color: Colors.blue.shade50,
                     borderRadius: BorderRadius.circular(100),
                   ),
+                  child: Image.network(
+                      'http://172.28.2.84:8081${widget.items[7].ic}'
+                  ),
                 ),
                 Text(
-                  '${widget.items[7].indutyNm}',
+                  widget.items[7].indutyNm,
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,

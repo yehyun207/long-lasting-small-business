@@ -63,7 +63,7 @@ class Name extends StatelessWidget {
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: Divider(
             thickness: 1.0,
-            color: Colors.grey,
+            color: Colors.grey.shade400,
           ),
         ),
         Padding(
@@ -75,7 +75,8 @@ class Name extends StatelessWidget {
                 '$name',
                 style: TextStyle(
                   color: Colors.grey,
-                  fontSize: 20,
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold
                 ),
               ),
               Icon(Icons.arrow_forward_outlined, color: Colors.blue,)

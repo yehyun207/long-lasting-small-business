@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:module_b_103/presentation/screens/main_screen.dart';
+import 'package:module_b_103/presentation/screens/settings_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:video_player/video_player.dart';
 import '../screens/home_content.dart';
@@ -36,6 +38,6 @@ class OneBoardingProvider extends ChangeNotifier {
     await sharedPref.setBool('skipOneBoarding', true);
     Navigator.of(
       context,
-    ).pushReplacement(MaterialPageRoute(builder: (context) => HomeContent()));
+    ).pushReplacement(MaterialPageRoute(builder: (context) => MainScreen()));
   }
 }
