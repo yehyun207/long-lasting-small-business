@@ -27,7 +27,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[0].ic}'
+                      'http://172.20.10.9:8081${widget.items[0].ic}'
                   ),
                 ),
                 Text(
@@ -50,7 +50,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[1].ic}'
+                      'http://172.20.10.9:8081${widget.items[1].ic}'
                   ),
                 ),
                 Text(
@@ -73,7 +73,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[2].ic}'
+                      'http://172.20.10.9:8081${widget.items[2].ic}'
                   ),
                 ),
                 Text(
@@ -96,7 +96,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[3].ic}'
+                      'http://172.20.10.9:8081${widget.items[3].ic}'
                   ),
                 ),
                 Text(
@@ -127,7 +127,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[4].ic}'
+                      'http://172.20.10.9:8081${widget.items[4].ic}'
                   ),
                 ),
                 Text(
@@ -150,7 +150,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[5].ic}'
+                      'http://172.20.10.9:8081${widget.items[5].ic}'
                   ),
                 ),
                 Text(
@@ -173,7 +173,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[6].ic}'
+                      'http://172.20.10.9:8081${widget.items[6].ic}'
                   ),
                 ),
                 Text(
@@ -196,7 +196,7 @@ class _HdstIndutyState extends State<HdstInduty> {
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Image.network(
-                      'http://172.28.2.84:8081${widget.items[7].ic}'
+                      'http://172.20.10.9:8081${widget.items[7].ic}'
                   ),
                 ),
                 Text(

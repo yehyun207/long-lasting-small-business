@@ -9,8 +9,10 @@ import '../screens/home_content.dart';
 final oneBoardingProvider = OneBoardingProvider();
 
 class OneBoardingProvider extends ChangeNotifier {
+
+
   final videoController = VideoPlayerController.networkUrl(
-    Uri.parse('http://172.28.2.84:8081/video/streaming/100.mp4'),
+    Uri.parse('http://172.20.10.9:8081/video/streaming/100.mp4'),
   );
 
   void initVideoController(BuildContext context) async {

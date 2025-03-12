@@ -5,10 +5,12 @@ import '../models/induty_model.dart';
 
 class HdstRepository {
 
+  final String ip = '172.20.10.9';
+
   final client = Client();
 
   Future<List<HdstModel>> getRandomFiveHdst() async{
-    final response = await client.get(Uri.parse('http://172.28.2.84:8081/api/home'));
+    final response = await client.get(Uri.parse('http://$ip:8081/api/home'));
 
     final json = jsonDecode(response.body);
 
@@ -24,7 +26,7 @@ class HdstRepository {
   }
 
   Future<List<IndutyModel>> getInduty() async {
-    final response = await client.get(Uri.parse('http://172.28.2.84:8081/api/hdst-induty'));
+    final response = await client.get(Uri.parse('http://$ip:8081/api/hdst-induty'));
     final jsonData = jsonDecode(response.body);
     final indutyJsonList = jsonData['data1']['indutyList'] as List;
 

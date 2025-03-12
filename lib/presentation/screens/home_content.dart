@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:module_b_103/presentation/providers/home_provider.dart';
-import 'package:module_b_103/presentation/screens/profile_screen.dart';
-import 'package:module_b_103/presentation/screens/search_screen.dart';
 import 'package:module_b_103/presentation/widgets/go_to.dart';
 import 'package:module_b_103/presentation/widgets/hdst_induty.dart';
 import 'package:module_b_103/presentation/widgets/page_indicator.dart';
